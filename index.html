@@ -144,7 +144,131 @@
     }
 
     @media (max-width: 768px) {
-      header h1 { font-size: 28px; }
+  /* Mobile-first adjustments */
+  header {
+    padding: 36px 16px 44px;
+  }
+
+  header > div {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  /* Center logo glass card on mobile */
+  header div[style*="backdrop-filter"] {
+    margin: 0 auto;
+  }
+
+  header img {
+    margin: 0 auto;
+  }
+
+  nav {
+    gap: 16px;
+    padding: 14px 12px;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  section {
+    margin: 28px 14px;
+    padding: 30px 22px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cta a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Desktop polish */
+  header {
+    padding: 60px 24px 70px;
+  }
+
+  header h1 {
+    font-size: 42px;
+  }
+
+  header p {
+    font-size: 20px;
+  }
+
+  section {
+    margin: 60px auto;
+    padding: 60px 48px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+  header > div {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  header img {
+    margin: 0 auto;
+  }
+
+  header div[style*="backdrop-filter"] {
+    align-items: center !important;
+    margin: 0 auto;
+  }
+
+  nav {
+    gap: 18px;
+    padding: 14px 10px;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  section {
+    margin: 30px 14px;
+    padding: 30px 22px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cta a {
+    width: 100%;
+    text-align: center;
+  }
+}
       header p { font-size: 16px; }
       section { padding: 35px 25px; }
     }
